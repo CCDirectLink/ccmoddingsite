@@ -13,46 +13,12 @@ body{
 }
 
 
-.home {
-  position: absolute;
-  left: 100px;
-  top: 20px;
-}
 
-.tags{
-  position: absolute;
-  left: 370px;
-  top: 20px;
-}
-
-.dropbtn {
-  position: absolute;
-  left: 260px;
-  top: 20px;
-}
-
-
-.news {
-  position: absolute;
-  left: 180px;
-  top: 20px;
-}
-
-.imag {
-    position: absolute;
-    left: 440px;
-    top: 20px;
-}
-
-img {
-    max-width:100%;
-    height: 75;
-    width: 75;
-}
 
 .navbar {
   overflow: hidden;
   background-color: #333;
+  font-family: Arial;
 }
 
 .navbar a {
@@ -91,9 +57,6 @@ img {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  position: absolute;
-  left: 260px;
-  top: 66px;
 }
 
 .dropdown-content a {
