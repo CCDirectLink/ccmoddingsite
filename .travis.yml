@@ -1,7 +1,10 @@
 language: node_js
+install:
+  - npm install
 script:
   - echo Please dont run a script, Travis
 deploy:
   provider: firebase
+  skip_cleanup: true
   token:
     secure: pYZgd/fGrd3igLhoZpmOppOBoqhF5jlS8mEP+ddDkcFe3KD0zqbvQ9E7PA3du1Ebf910X8nDRDsDmV19vCYUM9vNOOQvZOU7Ub9jySczXtRsp7QXeneIX4wHZ1g6GOS1hoRrw2QPESJ0fbBLfZikvjSA8eyqCdSyXN2iE7Yiix8DBIn0fE6vQhyZxzu/hKqw+Hh5R4DFRMdGWx95YzVnbYNDBP5kwJtuAAAFWQUOdFtgtUXgSE4Ndf9tW0fMDV/ZdxBA5pcUfgrzvh5y1sV1n591K20qRBqrKUH0UxuJsmtXBrOXkG5G1ZgoqwErAotmwUay4eVzWRXvvJaqNB28IvBwXxwgns4nwU9TCZorooE5k6HDHfNiFM74h/H9+S3bJVk3qmp4Na2XDYxPTAmXXelO/48zD4FFTAG/Fbw7bdteXq7YD3Mj59DCNV3NuH+EU3XkX4MUBP6HzUivPHy1fYQgK29LghraGgyo1EHvuJ29Fe6zwWqJKbz8iYfIQdSFSufjMc68U9U/T9J4CcbwEQt9tW+TAXHkdw321RSEm59fJyUp7ZK+3k9uGrctTTrMBxru2A8bSQ2hDZIX3WfYC3hoy+UmRRiDX0A1XhdYf41n8tV5c4efnmV1rhUdwOJcNx7pnQBE+/A1T8SfEL8zT78RS1Jun3dyk5/eIwsUXG8=
