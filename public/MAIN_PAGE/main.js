@@ -23,8 +23,8 @@ window.onload = async () => {
     }
 
     /**
-     * 
-     * @param {Mod} mod 
+     *
+     * @param {Mod} mod
      * @param {boolean} first
      */
     function addItem(mod, first) {
