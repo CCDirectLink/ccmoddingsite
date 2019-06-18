@@ -1,4 +1,6 @@
 language: node_js
+script:
+  - echo Please dont run a script, Travis
 deploy:
   provider: firebase
   token:
