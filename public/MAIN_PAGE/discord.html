@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <title>CCModding</title>
     <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
-    <title>CCModding</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/brands.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="main.js"></script>
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -21,8 +17,9 @@
           <span class="mdl-layout-title">CCModding</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="news.html">News</a>
-            <a class="mdl-navigation__link" href="team.html">Team</a>
+            <a class="mdl-navigation__link" href="../main.html">Home</a>
+            <a class="mdl-navigation__link" href="../news.html">News</a>
+            <a class="mdl-navigation__link" href="../team.html">Team</a>
             <a class="mdl-navigation__link" href="discord.html">Discord</a>
           </nav>
         </div>
@@ -30,8 +27,9 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">CCModding</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="news.html">News</a>
-          <a class="mdl-navigation__link" href="team.html">Team</a>
+          <a class="mdl-navigation__link" href="../main.html">Home</a>
+          <a class="mdl-navigation__link" href="../news.html">News</a>
+          <a class="mdl-navigation__link" href="../team.html">Team</a>
           <a class="mdl-navigation__link" href="discord.html">Discord</a>
         </nav>
       </div>
@@ -39,28 +37,15 @@
         <div class="mdl-grid">
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-cell mdl-cell--8-col">
-            <h2>Current available mods:</h2>
-            <ul class="mdl-list" id="modlist"></ul>
+            <div class="mdl-color--white content mdl-color-text--grey-800">
+              <h1>Discord</h1>
+                <h3>If you are interested in joining the CrossCode Modding Discord server, click the button below!</h3>
+                <iframe src="https://discordapp.com/widget?id=382339402338402315&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+            </div>
           </div>
           <div class="mdl-layout-spacer"></div>
         </div>
       </main>
     </div>
-
-    <template id="modlist-item-template">
-        <li class="mdl-list__item mdl-list__item--two-line">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-icon">chevron_right</i>
-            <span class="name"></span>
-            <span class="mdl-list__item-sub-title"></span>
-          </span>
-          <span class="mdl-list__item-secondary-content">
-            <a class="mdl-list__item-secondary-action github" target="_blank" href="#" title="Github"><i class="fab fa-github"></i></a>
-          </span>
-          <span class="mdl-list__item-secondary-content">
-            <a class="mdl-list__item-secondary-action download" target="_blank" href="#" title="Download"><i class="material-icons">get_app</i></a>
-          </span>
-        </li>
-    </template>
   </body>
 </html>
