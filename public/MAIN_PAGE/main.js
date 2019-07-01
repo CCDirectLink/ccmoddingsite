@@ -28,7 +28,7 @@ window.onload = async () => {
      * @param {boolean} first
      */
     function addItem(mod, first) {
-        iambadatvariablenames += 1;
+        id_changer += 1;
         /** @type {HTMLLIElement} */
         const item = document.importNode(itemTemplate.content, true);
         
@@ -36,7 +36,7 @@ window.onload = async () => {
         item.querySelector('span.mdl-list__item-sub-title').innerText = mod.description;
         item.querySelector('.github').href = mod.page[0].url;
         item.querySelector('.download').href = mod.archive_link;
-        item.querySelector('.github').setAttribute('id', 'github_tooltip' + iambadatvariablenames);
+        item.querySelector('.github').setAttribute('id', 'github_tooltip' + id_changer);
 
         list.appendChild(item);
     }
