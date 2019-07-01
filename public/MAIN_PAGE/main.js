@@ -31,11 +31,13 @@ window.onload = async () => {
         iambadatvariablenames += 1;
         /** @type {HTMLLIElement} */
         const item = document.importNode(itemTemplate.content, true);
+        
         item.querySelector('.name').innerText = mod.name;
         item.querySelector('span.mdl-list__item-sub-title').innerText = mod.description;
         item.querySelector('.github').href = mod.page[0].url;
         item.querySelector('.download').href = mod.archive_link;
         item.querySelector('.github').setAttribute('id', 'github_tooltip' + iambadatvariablenames);
+
         list.appendChild(item);
     }
 }
