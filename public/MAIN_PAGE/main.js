@@ -36,6 +36,7 @@ window.onload = async () => {
         item.querySelector('.github').href = mod.page[0].url;
         item.querySelector('.download').href = mod.archive_link;
         item.querySelector('.github').setAttribute('id', 'github' + count);
+        item.querySelector('.mdl-tooltip').setAttribute('for', 'github' + count);
 
         list.appendChild(item);
     }
