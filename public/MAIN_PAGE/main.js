@@ -1,5 +1,4 @@
 /// <reference path="main.d.ts" />
-
 window.onload = async () => {
     const list = document.getElementById('modlist');
     const itemTemplate = document.getElementById('modlist-item-template');
@@ -12,10 +11,10 @@ window.onload = async () => {
     /** @type {Mods} */
     const { mods } = await response.json();
 
-    let first = true;
+    let i = 0;
     for (const name in mods) {
-        addItem(mods[name], first);
-        first = false;
+        addItem(mods[name], i);
+        i++;
     }
 
     function templateSupported() {
@@ -25,16 +24,19 @@ window.onload = async () => {
     /**
      *
      * @param {Mod} mod
-     * @param {boolean} first
+     * @param {number} count
      */
-    function addItem(mod, first) {
+    function addItem(mod, count) {
+        id_changer += 1;
         /** @type {HTMLLIElement} */
         const item = document.importNode(itemTemplate.content, true);
-
+        
         item.querySelector('.name').innerText = mod.name;
         item.querySelector('span.mdl-list__item-sub-title').innerText = mod.description;
         item.querySelector('.github').href = mod.page[0].url;
         item.querySelector('.download').href = mod.archive_link;
+        item.querySelector('.github').setAttribute('id', 'github' + count);
+        item.querySelector('.mdl-tooltip').setAttribute('for', 'github' + count);
 
         list.appendChild(item);
     }
