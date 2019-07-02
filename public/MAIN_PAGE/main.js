@@ -27,7 +27,6 @@ window.onload = async () => {
      * @param {number} count
      */
     function addItem(mod, count) {
-        id_changer += 1;
         /** @type {HTMLLIElement} */
         const item = document.importNode(itemTemplate.content, true);
         
