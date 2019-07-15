@@ -15,6 +15,10 @@
     background: url(background.png) center / cover;
 }
 
-.demo-card-square > .mdl-card__accent {
-    background: #ff9800;
+//.demo-card-square > .mdl-card__accent {
+//    background: #ff9800;
+//}
+
+.demo-card-square > .mdl-card__2767 {
+    background: url(background.png) center / cover;
 }
