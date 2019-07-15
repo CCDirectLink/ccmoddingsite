@@ -12,7 +12,7 @@
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
-    background: #03a9f4;
+    background: url(background.png) center / cover;
 }
 
 .demo-card-square > .mdl-card__accent {
